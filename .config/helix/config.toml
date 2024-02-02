@@ -1,0 +1,15 @@
+theme = "monokai_pro"
+
+[editor]
+line-number = "relative"
+idle-timeout = 0
+true-color = true
+bufferline = "multiple"
+color-modes = true
+
+[editor.lsp]
+display-messages = true
+
+[editor.cursor-shape]
+insert = "bar"
+
