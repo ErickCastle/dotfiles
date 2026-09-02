@@ -1,0 +1,140 @@
+# Ported from Ghostty's Monokai Pro Light theme.
+# Adapted from Helix's `monokai_pro.toml` by WindSoilder.
+# Original Monokai Pro theme: https://monokai.pro
+
+"ui.linenr.selected" = { bg = "base3" }
+"ui.text.focus" = { fg = "yellow", modifiers= ["bold"] }
+"ui.menu" = { fg = "base8", bg = "base3" }
+"ui.menu.selected" = { fg = "base2", bg = "yellow" }
+"ui.virtual.whitespace" = "base5"
+"ui.virtual.ruler" = { bg = "base1" }
+"ui.virtual.jump-label" = { fg = "red", modifiers = ["bold"] }
+
+"info" = "base8"
+"hint" = "base8"
+
+# background color
+"ui.background" = { bg = "base2" }
+
+# status bars, panels, modals, autocompletion
+"ui.statusline" = { fg = "base8", bg = "base4" }
+"ui.statusline.inactive" = { fg = "base6", bg = "base8x0c" }
+"ui.statusline.normal" = { fg = "base2", bg = "blue" }
+"ui.statusline.insert" = { fg = "base2", bg = "green" }
+"ui.statusline.select" = { fg = "base2", bg = "purple" }
+"ui.popup" = { bg = "base3" }
+"ui.window" = { bg = "base3" }
+"ui.help" = { fg = "base8", bg = "base3" }
+
+# active line, highlighting
+"ui.selection" = { bg = "selection" }
+"ui.cursor.match" = { bg = "base4" }
+"ui.cursorline" = { bg = "base1" }
+
+# bufferline, inlay hints
+"ui.bufferline" = { fg = "base6", bg = "base8x0c" }
+"ui.bufferline.active" = { fg = "base8", bg = "base4" }
+"ui.virtual.inlay-hint" = { fg = "base6" }
+
+# comments
+"comment" = { fg = "base5", modifiers = ["italic"] }
+"ui.linenr" = { fg = "base5" }
+
+# cursor, variables, constants, attributes, fields
+"ui.cursor.primary" = { fg = "base7", modifiers = ["reversed"] }
+"attribute" = "blue"
+"variable"  = "base8"
+"constant"  = "orange"
+"variable.builtin" = "red"
+"constant.builtin" = "red"
+"namespace" = "base8"
+
+# base text, punctuation
+"ui.text" = { fg = "base8" }
+"punctuation" = "base6"
+
+# classes, types, primitives
+"type" = "green"
+"type.builtin" = { fg = "red" }
+"label" = "base8"
+
+# declaration, methods, routines
+"constructor" = "blue"
+"function" = "green"
+"function.macro" = { fg = "blue" }
+"function.builtin" = { fg = "cyan" }
+
+# operator, tags, units, punctuations
+"operator" = "red"
+"variable.other.member" = "base8"
+
+# keywords, special
+"keyword" = { fg = "red" }
+"keyword.directive" = "blue"
+"variable.parameter" = "#cc7a0a"
+
+# error
+"error" = "red"
+
+# annotations, decorators
+"special" = "#cc7a0a"
+"module" = "#cc7a0a"
+
+# warnings, escape characters, regex
+"warning" = "orange"
+"constant.character.escape" = { fg = "base8" }
+
+# strings
+"string" = "yellow"
+
+# integer, floating point
+"constant.numeric" = "purple"
+
+# vcs
+"diff.plus" = "green"
+"diff.delta" = "orange"
+"diff.minus" = "red"
+
+# diagnostics
+"diagnostic.warning" = { underline = { color = "orange", style = "curl" } }
+"diagnostic.error" = { underline = { color = "red", style = "curl" } }
+"diagnostic.info" = { underline = { color = "base8", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "base8", style = "curl" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated" = { modifiers = ["crossed_out"] }
+
+# markup
+"markup.heading" = "green"
+"markup.bold" = { fg = "orange", modifiers = ["bold"] }
+"markup.italic" = { fg = "orange", modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.link.url" = { fg = "orange", modifiers = ["underlined"] }
+"markup.link.text" = "yellow"
+"markup.quote" = "green"
+
+[palette]
+# primary accent colors (from Ghostty palette)
+"red"    = "#e14775"
+"orange" = "#e16032"
+"yellow" = "#cc7a0a"
+"green"  = "#269d69"
+"blue"   = "#1c8ca8"
+"cyan"   = "#1c8ca8"
+"purple" = "#7058be"
+
+# base colors — derived from background (#faf4f2) to foreground (#29242a)
+"base0"    = "#ede7e5"  # slightly darker than background, near-white
+"base1"    = "#e8e2e0"  # cursorline bg
+"base2"    = "#faf4f2"  # background (Ghostty bg)
+"base3"    = "#ede7e5"  # popups / panels
+"base4"    = "#bfb9ba"  # selection bg, statusline bg (Ghostty selection-background)
+"base5"    = "#a59fa0"  # comments, linenr (Ghostty palette 8)
+"base6"    = "#706b6e"  # punctuation, dimmer text (Ghostty cursor-color)
+"base7"    = "#4a4548"  # cursor fg
+"base8"    = "#29242a"  # primary foreground (Ghostty fg)
+
+# variants
+"base8x0c" = "#ede7e5"  # inactive statusline bg, bufferline bg
+
+# selection
+"selection" = "#bfb9ba"
