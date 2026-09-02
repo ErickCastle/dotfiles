@@ -1,4 +1,6 @@
-theme = "monokai_pro"
+[theme]
+dark = "monokai_pro"
+light = "monokai_pro_light"
 
 [editor]
 line-number = "relative"
